@@ -45,7 +45,7 @@ int16_t get_average( int16_t *ary ){
     return avg;
 }
 
-// 列車がフォトカプラを踏んだかどうかを検出する
+// 列車がフォトリフレクタを踏んだかどうかを検出する
 bool detect_train(uint8_t n){
     history_sens[n][ring_idx] = last_sens[n];
     avg_sens[n] = get_average(history_sens[n]);
